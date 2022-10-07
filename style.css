@@ -19,11 +19,12 @@ body{
 
 #left-side{
     color:#fff;
+    font-size: 12px;
     width: 400px;
+    flex-shrink: 0;
     background: url(benjamin-le-roux-Y4RwFdnBi7I-unsplash.jpg);
     justify-content: space-between;
     align-items: center;
-    font-size: 12px;
 }
 
 #photo-credit{
