@@ -20,8 +20,8 @@ body{
 #left-side{
     color:#fff;
     font-size: 12px;
-    width: 400px;
-    flex-shrink: 0;
+    min-width: 350px;
+    flex-grow: 1;
     background: url(benjamin-le-roux-Y4RwFdnBi7I-unsplash.jpg);
     justify-content: space-between;
     align-items: center;
@@ -70,6 +70,39 @@ body{
 
 #inputs-container{
     display: flex;
+    gap:30px;
+    max-width: 612px;
+    min-width: 400px;
+}
+
+#inputs-container div {
+    display: flex;
+    flex-direction: column;
+    flex:  1;
+}
+
+input{
+    appearance: none;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    border:1px solid #E5E7EB;
+    border-radius: 6px;
+    height: 30px;
+    padding: 4px;
+    margin-bottom: 16px;
+}
+
+input:focus{
+    appearance: none;
+    border: 1px solid #0055ff;
+    box-shadow: 0px 3px 2px 0px #D6D6D6;
+}
+
+label{
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
 #btn-container {
@@ -86,4 +119,10 @@ button{
     border-radius: 10px;
     margin-bottom: 14px;
     box-shadow: 0px 4px 3px 0px #D6D6D6;
+    cursor: pointer;
 }
+
+.error, input:invalid {
+    border:1px solid red;
+}
+
