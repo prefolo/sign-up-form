@@ -1,1 +1,3 @@
-# sign-up-form
+# Sign up form
+
+An example of sign up form.

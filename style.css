@@ -10,6 +10,10 @@ body{
     display: flex;
 }
 
+form {
+    background: #eee;
+}
+
 .side{
     display: flex;
     flex-direction: column;
@@ -36,10 +40,10 @@ body{
 
 
 #logo {
-    height:70px;
+    height: 222px;
     width: 100%;
-    background: url(logo.png) center center no-repeat rgba(0, 0, 0, 0.1);
-    margin-top: 100px;
+    background: url(logo4.png) center center no-repeat;
+    margin-top: 50px;
 }
 
 /* right side */
@@ -52,15 +56,12 @@ body{
 #info {
     padding: 40px;
     font-size: 18px;
-    font-weight: 600;
     max-width: 600px;
-    line-height: 1.3;
+    line-height: 1.4;
 }
 
 #form-container{
     font-size: 18px;
-    font-weight: 600;
-    box-shadow: 0px 5px 13px 0px #D6D6D6;
     padding: 40px;
 }
 
@@ -86,7 +87,7 @@ input{
     width: 100%;
     margin: 0;
     box-sizing: border-box;
-    border:1px solid #E5E7EB;
+    border: 1px solid #9a9a9a;
     border-radius: 4px;
     height: 34px;
     padding: 0 10px;
@@ -113,18 +114,18 @@ label{
 
 button{
     border:0;
-    background-color: rgb(143, 109, 157);
+    background-color: rgb(209 161 88);
     color: #fff;
     padding: 10px 20px;
     font-size: 20px;
     width: fit-content;
-    border-radius: 10px;
     margin-bottom: 14px;
-    box-shadow: 0px 4px 3px 0px #D6D6D6;
+    box-shadow: 0px 3px 3px 0px #18181838;
     cursor: pointer;
+    font: 17px Geneva;
 }
 
 .error, input:invalid {
-    border:1px solid red;
+    border:2px solid red;
 }
 
